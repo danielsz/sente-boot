@@ -5,9 +5,9 @@ The [[https://github.com/ptaoussanis/sente/tree/master/example-project][example 
 
 ** Usage
 
-Fire the Boot pipeline.
+Fire the Boot pipeline from the command line.
 #+BEGIN_SRC shell
-boot dev
+$ boot dev
 #+END_SRC
 
 1. Connect to the REPL. 
