@@ -1,6 +1,7 @@
 * Sente example app
-** What is this
-Same example app, different toolchain.
+** What is this?
+
+The [[https://github.com/ptaoussanis/sente/tree/master/example-project][example app]] from Sente, but with Boot instead of Leiningen.
 
 ** Usage
 
