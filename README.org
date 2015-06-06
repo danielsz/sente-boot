@@ -1,0 +1,14 @@
+* Sente example app
+** What is this
+Same example app, different toolchain.
+
+** Usage
+
+Fire the Boot pipeline.
+#+BEGIN_SRC shell
+boot dev
+#+END_SRC
+
+1. Connect to the REPL. 
+2. Evaluate the namespace ~example.my-app~.  
+3. Type ~(start!)~ in the REPL.
