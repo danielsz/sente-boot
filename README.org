@@ -13,3 +13,5 @@ $ boot dev
 1. Connect to the REPL. 
 2. Evaluate the namespace ~example.my-app~.  
 3. Type ~(start!)~ in the REPL.
+** More
+Please also check out [[https://github.com/danielsz/sente-system][the example app for system]].
