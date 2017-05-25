@@ -1,7 +1,7 @@
 (set-env!
  :source-paths   #{"src/clj" "src/cljs"}
  :dependencies '[[adzerk/boot-cljs      "0.0-3269-2" :scope "test"]
-                 [adzerk/boot-reload    "0.2.6"      :scope "test"]
+                 [adzerk/boot-reload    "0.5.1"      :scope "test"]
                  [org.clojure/clojure       "1.7.0-RC1"]
                  [org.clojure/tools.nrepl "0.2.10"]
            
@@ -25,7 +25,8 @@
 
 (require
  '[adzerk.boot-cljs      :refer [cljs]]
- '[adzerk.boot-reload    :refer [reload]])
+ '[adzerk.boot-reload    :refer [reload]]
+ 'example.my-app)
 
 (deftask dev
   "Run a restartable system in the Repl"
@@ -34,4 +35,4 @@
    (watch)
    (cljs :source-map true)
    (reload)
-   (repl :server true)))
+   (repl :init-ns 'example.my-app)))

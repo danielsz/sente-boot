@@ -193,8 +193,8 @@
 
 (defn start! []
   (start-router!)
-  (start-web-server!)
-  (start-broadcaster!))
+  (start-web-server!))
+  ;(start-broadcaster!))
 
 
 ;; #+clj (start!) ; Server-side auto-start disabled for LightTable, etc.
