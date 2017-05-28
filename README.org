@@ -10,7 +10,7 @@ Fire the Boot pipeline from the command line.
 $ boot dev
 #+END_SRC
 
-1. Connect to the REPL with your favorite editor or run `boot repl-client` in a separate shell.
+1. Connect to the REPL with your favorite editor or run ~boot repl-client~ in a separate shell.
 2. Type ~(start!)~ in the REPL.
 3. Your browser should automatically open to the provided port on localhost
 5. Type ~(test-fast-server>user-pushes)~ in the REPL. And look at output of js console
