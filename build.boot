@@ -1,6 +1,6 @@
 (set-env!
  :source-paths   #{"src/clj" "src/cljs"}
- :dependencies '[[adzerk/boot-cljs      "0.0-3269-2" :scope "test"]
+ :dependencies '[[adzerk/boot-cljs      "2.0.0" :scope "test"]
                  [adzerk/boot-reload    "0.5.1"      :scope "test"]
                  [org.clojure/clojure       "1.7.0-RC1"]
                  [org.clojure/tools.nrepl "0.2.10"]
@@ -35,4 +35,11 @@
    (watch)
    (cljs :source-map true)
    (reload)
-   (repl :init-ns 'example.my-app)))
+   (repl 
+    :server true 
+    :init-ns 'example.my-app)))
+
+(deftask repl-client
+ []
+ (comp
+  (repl :client true)))
