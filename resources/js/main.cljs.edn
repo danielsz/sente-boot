@@ -1,0 +1,2 @@
+{:require [example.client]
+ :compiler-options {:asset-path "js/main.out"}}
